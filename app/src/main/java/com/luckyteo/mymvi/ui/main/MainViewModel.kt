@@ -1,7 +1,7 @@
 package com.luckyteo.mymvi.ui.main
 
 import androidx.lifecycle.viewModelScope
-import com.luckyteo.mymvi.base.BaseViewModel
+import com.luckyteo.mymvi.ui.base.BaseViewModel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 

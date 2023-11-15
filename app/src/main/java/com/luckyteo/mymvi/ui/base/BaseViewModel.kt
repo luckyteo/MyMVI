@@ -1,4 +1,4 @@
-package com.luckyteo.mymvi.base
+package com.luckyteo.mymvi.ui.base
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

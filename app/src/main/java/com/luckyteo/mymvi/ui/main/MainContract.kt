@@ -1,8 +1,8 @@
 package com.luckyteo.mymvi.ui.main
 
-import com.luckyteo.mymvi.base.ViewEffect
-import com.luckyteo.mymvi.base.ViewEvent
-import com.luckyteo.mymvi.base.ViewState
+import com.luckyteo.mymvi.ui.base.ViewEffect
+import com.luckyteo.mymvi.ui.base.ViewEvent
+import com.luckyteo.mymvi.ui.base.ViewState
 
 class MainContract {
 
