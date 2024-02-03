@@ -7,8 +7,8 @@ import com.luckyteo.mymvi.ui.base.ViewState
 class MainContract {
 
     sealed class Event : ViewEvent {
-        object OnRandomNumberClicked : Event()
-        object OnShowToastClicked : Event()
+        data object OnRandomNumberClicked : Event()
+        data object OnShowToastClicked : Event()
     }
 
     data class State(
@@ -16,14 +16,14 @@ class MainContract {
     ) : ViewState
 
     sealed class RandomNumberState {
-        object Idle : RandomNumberState()
-        object Loading : RandomNumberState()
+        data object Idle : RandomNumberState()
+        data object Loading : RandomNumberState()
         data class Success(val number : Int) : RandomNumberState()
     }
 
     sealed class Effect : ViewEffect {
 
-        object ShowToast : Effect()
+        data object ShowToast : Effect()
 
     }
 

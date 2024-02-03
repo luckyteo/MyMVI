@@ -45,6 +45,7 @@ class MainActivity : AppCompatActivity() {
     private fun initObservers() {
 
         // process ViewState
+        // update data to UI
         lifecycleScope.launch {
             lifecycle.repeatOnLifecycle(Lifecycle.State.STARTED) {
                 viewModel.uiState.collect {
@@ -67,6 +68,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         // process ViewEffect
+        // update effect move screen, play animation, show popup, ...
         lifecycleScope.launch {
             lifecycle.repeatOnLifecycle(Lifecycle.State.STARTED) {
                 viewModel.effect.collect {

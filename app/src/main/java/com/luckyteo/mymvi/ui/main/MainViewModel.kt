@@ -38,7 +38,7 @@ class MainViewModel : BaseViewModel<MainContract.Event, MainContract.State, Main
             // Set Loading
             setState { copy(randomNumberState = MainContract.RandomNumberState.Loading) }
             try {
-                delay(5000)
+                delay(2000)
                 val random = (0..10).random()
                 if (random % 2 == 0) {
                     setState { copy(randomNumberState = MainContract.RandomNumberState.Idle) }
